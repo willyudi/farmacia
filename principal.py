@@ -10,8 +10,12 @@ class Application(Frame):
         c = con.cursor()
         c.execute('SELECT * FROM tbtipo')
 
+        self.texto = Text(self, width=55, height=1)
+        self.texto.pack(side=RIGHT)
+
         self.msg = Label(self, text=c.fetchall())
         self.msg.pack ()
+
         self.bye = Button (self, text="Adeus", command=self.quit)
         self.bye.pack ()
         self.pack()
