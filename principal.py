@@ -16,7 +16,7 @@ class Application(Frame):
         self.msg = Label(self, text=c.fetchall())
         self.msg.pack ()
 
-        self.bye = Button (self, text="Adeus", command=self.quit)
+        self.bye = Button (self, text="Adeus WIlly", command=self.quit)
         self.bye.pack ()
         self.pack()
 
