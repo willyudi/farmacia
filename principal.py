@@ -6,7 +6,7 @@ class Application(Frame):
     def __init__(self, master=None):
         Frame.__init__(self, master)
 
-        con = psycopg2.connect(host='localhost', user='williano', password='willy01',dbname='dbminhafarmacia')
+        con = psycopg2.connect(host='localhost', user='williano', password='',dbname='dbminhafarmacia')
         c = con.cursor()
         c.execute('SELECT * FROM tbtipo')
 
